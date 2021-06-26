@@ -4,9 +4,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
-body{
-    background: rgb(7, 6, 6);
-}
+
 
 .fp-video, .ft-art, .menu-item {
 	display: inline-block;
