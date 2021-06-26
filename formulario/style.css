@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('Img/Background.jpg');
+}
+.form-register{
+    width: 400px;
+    background: #0c0646;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-shadow:7px 13px 37px  #000;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.controls{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 0;
+    font-family: 'Lucida Sans';
+    font-size: 16px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+.form-register a{
+    color: rgb(158, 190, 191);
+    text-decoration:none;
+}
+
+.form-register a:hover{
+    text-decoration:underline;
+}
+
+.form-register .botons{
+    background: #d14646;
+    padding: 12px;
+     width: 100%;
+     border: 0;
+     border-radius: 7px;
+     margin-top: 15px;
+     font-size: 17px;
+     margin-bottom: 10px;
+}

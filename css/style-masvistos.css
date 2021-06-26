@@ -1,0 +1,8 @@
+.anuncio{
+    text-align: center;
+    width: 35%;
+    padding: 10px 33%;
+}
+.anuncio a{
+    color: brown;
+}

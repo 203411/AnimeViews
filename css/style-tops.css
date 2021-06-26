@@ -1,0 +1,111 @@
+
+/* SLIDE */
+
+.mySlides {
+    display: inline-block;
+    text-align: center;
+}
+
+.container .mySlides a:hover{
+    background:#1f7480e7;
+    border: #102a33 solid 1px;
+}
+
+
+
+.container .mySlides a{
+    font-family: 'Iniya', sans-serif;
+    font-size: 20px;
+}
+
+
+/* Slideshow container */
+.container-Slide {
+    max-width: 650px;
+    position: relative;
+    margin: auto;   
+    margin-top: 20px;
+}
+/* Botones izquierdo y derecho */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*Posición botón derecho */
+.next {
+    right: -1;
+    border-radius: 3px 0 0 3px;
+    left: 93.5%;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*TOPS*/
+
+.container-2 .tops{
+    margin-bottom: 20px;
+    background: #f2f2f2;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    float: left;
+}
+
+.tops .tops-a div:hover{
+    background:#1f7480e7;
+    border: #102a33 solid 1px;
+}
+.tops div{
+    margin: 10px;
+    padding: 10px;
+}
+
+.tops h2{
+    font-size: 17px;
+}
+.tops h2, .tops p{
+    width: 90%;
+    padding: 1%;
+}
+
+.tops div img{
+    width: 95%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/* Tooltip text */
+.item .tooltiptext {
+    visibility: hidden;
+    width: 25%;
+    background-color: rgb(7, 34, 44);
+    color: #fff;
+    padding: 8px;
+    position: static;
+    border-radius: 6px;
+   
+    /*Posicion del tooltip text*/
+    position:absolute;
+    text-align: center;
+    font-size: 18.5px;
+  }
+  
+  /* Visualiza el tooltip text cuando se pasa el mouse sobre el DIV que contiene la imagen */
+  .item:hover .tooltiptext {
+    visibility: visible;
+    text-align: center;
+  }
+  

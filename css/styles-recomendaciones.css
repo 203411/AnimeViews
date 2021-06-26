@@ -1,0 +1,120 @@
+.contenedor{
+	max-width: 1124px;
+	margin: 0 auto;
+}
+
+/*RECOMENDACIONES*/
+
+.recomendaciones{
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    background: #f2f2f2;
+    
+}
+
+.anuncio{
+    text-align: center;
+    width: 35%;
+    padding: 10px 33%;
+}
+.anuncio a{
+    color: brown;
+}
+
+.recomendaciones .recomendaciones-a{
+    color: black;
+    text-decoration: none;
+}
+
+.recomendaciones .recomendaciones-a div:hover{
+    background: rgb(154, 158, 158);
+    box-shadow: #021014 2px 2px 2px;
+}
+.recomendaciones div{
+    margin: 10px;
+    padding: 10px;
+}
+
+.recomendaciones h2{
+    font-size: 17px;
+}
+.recomendaciones h2, .recomendaciones p{
+    width: 90%;
+    padding: 1%;
+}
+
+.recomendaciones div img{
+    width: 95%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/* Tooltip text */
+.item .tooltiptext {
+    visibility: hidden;
+    width: 20%;
+    background-color: rgb(7, 34, 44);
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    border-radius: 6px;
+   
+    /*Posicion del tooltip text*/
+    position:absolute;
+  }
+  
+  /* Visualiza el tooltip text cuando se pasa el mouse sobre el DIV que contiene la imagen */
+  .item:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/*TRAILERS*/
+.aside-extra{
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.aside-extra .aside-trailer{
+    padding: 10px;
+}
+.aside-extra img{
+    width: 90%;
+    padding: 5px 5px;
+}
+.aside-extra .aside-trailer:hover{
+    background: rgb(154, 158, 158);
+    box-shadow: #021014 2px 2px 2px;
+}
+
+.aside-extra .btn{
+    margin: 0 35% ;
+    
+}
+
+
+
+@media(max-width:700px){
+
+    .recomendaciones{
+        grid-template-columns: 1fr;
+    }
+    .redacciones{
+        width: 100%;
+    }
+    .container-2{
+        display: block;
+    }
+    .aside-r{
+        border-left: none;
+        float: none;
+        width: 100%;
+    }
+
+}
