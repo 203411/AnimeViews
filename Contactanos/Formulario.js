@@ -15,14 +15,21 @@ var getData = function(){
                 if(comment == "") {
                     document.getElementById("comment").focus();
                 } else {
+
+                  
+                        if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(email))){
+                            alert("La dirección de email es incorrecta.");
+                            document.getElementById("email").focus();
+                        } else {
                     console.log('Apellido: ' + sname + ' Nombre: ' + name + ' Email: ' + email)
                     document.getElementById("sname").value = "";
                     document.getElementById("name").value = "";
                     document.getElementById("email").value = "";
-                    document.getElementById("comment").value = ""; 
-                    console.log('comentario: ' + comment);
+                    document.getElementById("comment").value = "";
+                        } 
                 }
             }
         }
     }
 }
+
