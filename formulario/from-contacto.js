@@ -4,13 +4,15 @@ var getData = function(){
     var email = document.getElementById("email").value;
     var motivo = document.getElementById("motivo").value;
     var mensaje = document.getElementById("comit").value;
+    const form = document.getElementById("form").value;
+    var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
     if(name == "") {
         document.getElementById("name").focus();
     } else {
         if(apodo == "") {
             document.getElementById("apodo").focus();
         } else {
-            if(email == "") {
+            if(regexEmail.test(email.value)) {
                 document.getElementById("email").focus();
             } else {
                 if(motivo == "") {
@@ -30,4 +32,6 @@ var getData = function(){
             }
         }
     }
+    
+    
 }
