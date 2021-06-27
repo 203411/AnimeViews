@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../css/mq.css">
         <link rel="stylesheet" type="text/css" href="style-contacto.css">
-
+        <script type="text/javascript" src="from-contacto.js"></script>
         <link href="https://file.myfontastic.com/tc26fJHv8scB3d4vHQRRsV/icons.css" rel="stylesheet">
 		
 	</head>
@@ -38,102 +38,60 @@
 				</ul>
 			</nav>
             
-            <main>
-                <h1>Dejanos tu opinión</h1>
-                <hr class="line">
-                <div class="container-comments">
-                    <div class="comments">
-                        <div class="photo-perfil">
-                            <img src="../img/profile1.jpg" alt="">
-                        </div>
-                        <div class="info-comments">
-                            <div class="header">
-                                <h4>Usuario 1</h4>
-                                <h5>Fecha</h5>
-        
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis, blanditiis ipsa numquam reprehenderit voluptas necessitatibus delectus odio rem tenetur libero suscipit rerum dignissimos, laborum cum ut saepe nesciunt! Neque.</p>
-                            <div class="footer">
-                                <h5 class="request">Responder</h5>
-                                <label class = "icon-heart" for = ""></label>
-                            </div>
-                        </div>
+            <div class="contenedor-2">
+                <section class="aditional">
+                    <div class="information">
+                        <h2>
+                            Información adicional
+                        </h2>
+                        <h3>
+                            Temas para el mensaje
+                        </h3>
+                        <ul>
+                            <li>
+                                Trabajar con nosotros
+                            </li>
+                            <li>
+                                Solicitar un tema de tu interes
+                            </li>
+                            <li>
+                                Pedir información acerca de un anime
+                            </li>
+                            <li>
+                                Sugerir cambios al diseño o información
+                            </li>
+                        </ul>
+                        <p>
+                            Tu mensaje será enviado al siguiente correo de forma automática, rellena todos los campos para que sea válido
+                        </p>
+                        <h3>
+                            Lindo día y gracias por tu contribución :3
+                        </h3>
                     </div>
-                </div>
-                <div class="container-comments-request">
-                    <div class="comments-request">
-                        <div class="photo-perfil-request">
-                            <img src="../img/profile1.jpg" alt="">
-                        </div>
-                        <div class="info-comments-request">
-                            <div class="header">
-                                <h4>Usuario 1</h4>
-                                <h5>Fecha</h5>
-        
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis, blanditiis ipsa numquam reprehenderit voluptas necessitatibus delectus odio rem tenetur libero suscipit rerum dignissimos, laborum cum ut saepe nesciunt! Neque.</p>
-                            <div class="footer">
-                                <h5 class="request">Responder</h5>
-                                <label class = "icon-heart" for = ""></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-comments">
-                    <div class="comments">
-                        <div class="photo-perfil">
-                            <img src="../img/profile1.jpg" alt="">
-                        </div>
-                        <div class="info-comments">
-                            <div class="header">
-                                <h4>Usuario 1</h4>
-                                <h5>Fecha</h5>
-        
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis, blanditiis ipsa numquam reprehenderit voluptas necessitatibus delectus odio rem tenetur libero suscipit rerum dignissimos, laborum cum ut saepe nesciunt! Neque.</p>
-                            <div class="footer">
-                                <h5 class="request">Responder</h5>
-                                <label class = "icon-heart" for = ""></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-comments">
-                    <div class="comments">
-                        <div class="photo-perfil">
-                            <img src="../img/profile1.jpg" alt="">
-                        </div>
-                        <div class="info-comments">
-                            <div class="header">
-                                <h4>Usuario 1</h4>
-                                <h5>Fecha</h5>
-        
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis, blanditiis ipsa numquam reprehenderit voluptas necessitatibus delectus odio rem tenetur libero suscipit rerum dignissimos, laborum cum ut saepe nesciunt! Neque.</p>
-                            <div class="footer">
-                                <h5 class="request">Responder</h5>
-                                <label class = "icon-heart" for = ""></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <div class="capa-data">
+                </section>
+                <section class= "form-register" >
+                    <h4>Ponte en contacto con nosotros</h4>
+                    <form action="POST">
+                    <input class = "controls" type="text" name="name" id="name" placeholder="Nombre"> 
+                    <input class = "controls" type="text" name="apodo" id="apodo" placeholder="Apodo">
+                    <input class = "controls" type="email" name="email" id="email" placeholder="Email">
+                    <input class = "controls" type="text" name="motivo" id="motivo" placeholder="Motivo de tu mensaje" >
+                	<textarea class="controls" name="comentario" id="comit" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    </form>
+            
+                    <p class="box">
+                        <input type="checkbox" name="box" id="box">
+                        Estoy de acuerdo con <a href="#">Terminos y condiciones</a>
+                    </p>
+                    <button class = "botons" type = "button" onclick="getData()"> 
+                        Registrar
+                    </button>
+                    <p>
+                        <a href="#">Ya tengo cuenta</a>
+                    </p>
+                </section>    
 
             </div>
-            <div class="container-data">
-                <div class="photo-input">
-                    <div class="perfil-photo">
-                        <img src="../img/profile1.jpg" alt="">
-                    </div>
-                    <input type="text" placeholder="Su nombre">
-                </div>
-                <button class="btn-comment">Comentar</button>
-                <textarea class="mensaje" name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-
-               
-            </div>
-                
 			<!-- Pié de página -->
 
 			<footer>
@@ -171,9 +129,8 @@
 				</footer>
 			</footer>
 		</div>
-        <script src="js/script.js"></script>
-        <script src="js/jquery.js"></script>
-		
+
+
 		<script src="../main.js"></script>
 	</body>
 </html>
