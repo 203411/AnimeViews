@@ -1,41 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style-contacto.css">
-    <title>Contacto</title>
-</head>
-<body>
-    <div class="background">
-        <img src="" alt="">
-        <div class="capa">
+<html>
 
-        </div>
-    </div>
-    <main>
-        <h1>Dejanos tu opinión</h1>
-        <hr class="line">
-        <div class="container-comments">
-            <div class="comments">
-                <div class="photo-perfil">
-                    <img src="" alt="">
-                </div>
-                <div class="info-comments">
-                    <div class="header">
-                        <h4>Usuario 1</h4>
-                        <h5>Fecha</h5>
+	<!-- Elementos de la etiqueta <head> -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>AnimeViews</title>
+		<!-- FONT AWESOME-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/mq.css">
+        <link rel="stylesheet" type="text/css" href="style-contacto.css">
+        <script type="text/javascript" src="from-contacto.js"></script>
+        <link href="https://file.myfontastic.com/tc26fJHv8scB3d4vHQRRsV/icons.css" rel="stylesheet">
+		
+	</head>
 
+	<body>
+		<div class="contenedor">
+            <div class="logo"><img src="../img/logo2.jpg"></div>
+
+			<!-- Menu de navegación -->
+
+			<nav class="nav-main">
+				<div class = "menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+				<ul class="nav-menu">
+					<li class="menu-item"><a href="../index.html"><div>inicio</div></a></li>
+					<li class="menu-item"><a href="../criticas.html"><div>críticas</div></a></li>
+					<li class="menu-item"><a href="../recomendaciones.html"><div>recomendaciones</div></a></li>
+					<li class="menu-item"><a href="../tops.html"><div>tops</div></a></li>
+					<li class="menu-item"><a href="../masvistos.html"><div>más vistos</div></a></li>
+					<li class="menu-item"><a href="../novedades.html"><div>novedades</div></a></li>
+					<li class="menu-item"><a href="../perfiles.html"><div>nosotros</div></a></li>
+					<li class="menu-item"><a href="../formulario/contactanos.html"><div>contactanos</div></a></li>
+				</ul>
+			</nav>
+            
+            <div class="contenedor-2">
+                <section class="aditional">
+                    <div class="information">
+                        <h2>
+                            Información adicional
+                        </h2>
+                        <h3>
+                            Temas para el mensaje
+                        </h3>
+                        <ul>
+                            <li>
+                                Trabajar con nosotros
+                            </li>
+                            <li>
+                                Solicitar un tema de tu interes
+                            </li>
+                            <li>
+                                Pedir información acerca de un anime
+                            </li>
+                            <li>
+                                Sugerir cambios al diseño o información
+                            </li>
+                        </ul>
+                        <p>
+                            Tu mensaje será enviado al correo del sitio de forma automática, rellena todos los campos para que sea válido
+                        </p>
+                        <h3>
+                            Lindo día y gracias por tu contribución :3
+                        </h3>
                     </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis, blanditiis ipsa numquam reprehenderit voluptas necessitatibus delectus odio rem tenetur libero suscipit rerum dignissimos, laborum cum ut saepe nesciunt! Neque.</p>
-                    <div class="footer">
-                        <h5 class="request">Responder</h5>
-                        <label class = " " for = ""></label>
-                    </div>
-                </div>
+                </section>
+                <section class= "form-register" >
+                    <h4>Ponte en contacto con nosotros</h4>
+                    <form method="POST" id="form">
+                    <input class = "controls" type="text" name="name" id="name" placeholder="Nombre"> 
+                    <input class = "controls" type="text" name="apodo" id="apodo" placeholder="Apodo">
+                    <input class = "controls" type="email" name="email" id="email" placeholder="Email">
+                    <input class = "controls" type="text" name="motivo" id="motivo" placeholder="Motivo de tu mensaje" >
+                	<textarea class="controls" name="comentario" id="comit" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    </form>
+            
+                    <p class="box">
+                        <input type="checkbox" name="box" id="box">
+                        Estoy de acuerdo con <a href="#">Terminos y condiciones</a>
+                    </p>
+                    <button class = "botons" type = "button" onclick="getData()"> 
+                        Registrar
+                    </button>
+                    <p>
+                        <a href="#">Ya tengo cuenta</a>
+                    </p>
+                    <p class="warnings" id="warnings"></p>
+                </section>    
+
             </div>
-        </div>
-    </main>
-</body>
+			<!-- Pié de página -->
+
+			<footer>
+				<div class="footer-links">
+                    <ul>
+                        <li>
+                            <a href="#">Condiciones generales de uso</a>
+                        </li>
+                        <li>
+                            <a href="#">Política de privacidad </a>
+                        </li>
+                        <li>
+                            <a href="#">Política de cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Redacción</a>
+                        </li>
+                        <li>
+                            <a href="#">Contenido</a>
+                        </li>
+                    </ul>
+                </div>
+				<footer class="footer"> 
+              
+					<section class="social">
+						<p>Siguenos</p>
+						<div class="links">
+							<a href="https://facebook.com"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://youtube.com"  target="_blank"><i class="fab fa-youtube"></i></a>
+							<a href="https://instagram.com"  target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://twitter.com"  target="_blank"><i class="fab fa-twitter"></i></a>
+						</div>
+					</section>
+					<h3>AnimeViews - by Hina & Deus</h3>
+				</footer>
+			</footer>
+		</div>
+
+
+		<script src="../main.js"></script>
+	</body>
 </html>
