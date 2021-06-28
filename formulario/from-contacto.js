@@ -12,7 +12,7 @@ var getData = function(){
         if(apodo == "") {
             document.getElementById("apodo").focus();
         } else {
-            if(regexEmail.test(email.value)) {
+            if(email = "") {
                 document.getElementById("email").focus();
             } else {
                 if(motivo == "") {
@@ -21,12 +21,17 @@ var getData = function(){
                     if(mensaje ==""){
                         document.getElementById("comit").focus();
                     }else{
-                        console.log('Nombre: ' + name + ' Apodo: ' + apodo + ' Email: ' + email + ' Mensaje: '+mensaje);
-                        document.getElementById("name").value = "";
-                        document.getElementById("apodo").value = "";
-                        document.getElementById("email").value = "";
-                        document.getElementById("motivo").value = ""; 
-                        document.getElementById("comit").value = "";
+                        if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|es)+$/.test(email))){
+                            alert("La dirección de email es incorrecta.");
+                            document.getElementById("email").focus();
+                        }else{
+                            console.log('Nombre: ' + name + ' Apodo: ' + apodo + ' Email: ' + email + ' Mensaje: '+mensaje);
+                            document.getElementById("name").value = "";
+                            document.getElementById("apodo").value = "";
+                            document.getElementById("email").value = "";
+                            document.getElementById("motivo").value = ""; 
+                            document.getElementById("comit").value = "";
+                        }
                     }
                 }
             }
